@@ -75,3 +75,7 @@ You need [wa-crypt-tools](https://github.com/ElDavoo/wa-crypt-tools) and an end-
 - Denying the permission prompt on the restore screen makes WhatsApp skip the restore with no error.
 - A restore that sits on "Preparing…" and then fails means WhatsApp rejected the database contents, not the encryption. To check, re-encrypt an unmodified backup with `waencrypt` and restore it.
 - Backups contain no indexes, and WhatsApp rebuilds them during restore. New chat rows without `account_jid_row_id` and its related fields made the restore hang, so `wamerge` now copies an existing chat row as a template.
+
+## License
+
+MIT, see [LICENSE](LICENSE). The [whatsmeow](https://github.com/tulir/whatsmeow) library this builds on is MPL-2.0.
