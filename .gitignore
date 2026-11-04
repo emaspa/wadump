@@ -1,0 +1,10 @@
+/wadump
+/waexport
+/wamerge
+/wapeek
+*.db
+*.db-*
+*.crypt*
+*.pb
+*.jsonl
+qr.txt
